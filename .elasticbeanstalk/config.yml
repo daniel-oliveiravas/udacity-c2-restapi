@@ -2,7 +2,7 @@ branch-defaults:
   dev:
     environment: null
   ops-3-auth:
-    environment: udacity-c2-restapi-dev
+    environment: udagram
     group_suffix: null
 deploy:
   artifact: ./www/Archive.zip
@@ -11,7 +11,7 @@ environment-defaults:
     branch: null
     repository: null
 global:
-  application_name: udacity-c2-restapi
+  application_name: udagram
   branch: null
   default_ec2_keyname: udagram-eb
   default_platform: Node.js
