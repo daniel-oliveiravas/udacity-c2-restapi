@@ -1,14 +1,14 @@
-import {Sequelize} from 'sequelize-typescript';
+import { Sequelize } from 'sequelize-typescript';
 import { config } from './config/config';
 
 // Instantiate new Sequelize instance!
 export const sequelize = new Sequelize({
-  "username": config.username,
-  "password": config.password,
-  "database": config.database,
-  "host":     config.host,
+  "username": config.database.username,
+  "password": config.database.password,
+  "database": config.database.name,
+  "host": config.database.host,
 
-  dialect: 'postgres',
+  dialect: config.database.dialect,
   storage: ':memory:',
 });
 
