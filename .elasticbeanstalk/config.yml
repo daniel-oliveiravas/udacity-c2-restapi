@@ -1,6 +1,7 @@
 branch-defaults:
   dev:
-    environment: null
+    environment: udagram-dev
+    group_suffix: null
   ops-3-auth:
     environment: udagram
     group_suffix: null
